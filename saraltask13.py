@@ -53,7 +53,7 @@ def scrape_movie_details(soup):
             actor_dict["Actor name"]=Actor_list[i]
             actor_new_list.append(actor_dict)
         detail_movie["Cast"]=actor_new_list
-    data=open("saraltask4.json","w")
+    data=open("saraltask13.json","w")
     saral=json.dumps(list_movie, indent=4)
     data.write(saral)
     return list_movie
